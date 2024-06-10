@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Logement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-left">
+            <h2>Type de Logement</h2>
+            <label>
+                <input type="radio" name="type" value="appartement"> Appartement
+            </label>
+            <label>
+                <input type="radio" name="type" value="maison"> Maison
+            </label>
+            <h2>Wilaya</h2>
+            <select id="wilaya-select">
+                <option value="">Sélectionnez une wilaya</option>
+                <option value="Adrar">Adrar</option>
+                <option value="Assaba">Assaba</option>
+                <option value="Brakna">Brakna</option>
+                <option value="Dakhlet Nouadhibou">Dakhlet Nouadhibou</option>
+                <option value="Gorgol">Gorgol</option>
+                <option value="Guidimaka">Guidimaka</option>
+                <option value="Hodh Ech Chargui">Hodh Ech Chargui</option>
+                <option value="Hodh El Gharbi">Hodh El Gharbi</option>
+                <option value="Inchiri">Inchiri</option>
+                <option value="Nouakchott-Nord">Nouakchott-Nord</option>
+                <option value="Nouakchott-Ouest">Nouakchott-Ouest</option>
+                <option value="Nouakchott-Sud">Nouakchott-Sud</option>
+                <option value="Tagant">Tagant</option>
+                <option value="Tiris Zemmour">Tiris Zemmour</option>
+                <option value="Trarza">Trarza</option>
+            </select>
+            <h2>Ville</h2>
+            <select id="ville-select">
+                <option value="">Sélectionnez une wilaya d'abord</option>
+            </select>
+        </div>
+        <div class="form-right">
+            <h2>Prix</h2>
+            <input type="text" name="prix" placeholder="Prix">
+            <h2>État</h2>
+            <label>
+                <input type="radio" name="etat" value="vente"> Vente
+            </label>
+            <label>
+                <input type="radio" name="etat" value="alouer"> À louer
+            </label>
+            <h2>Nombre de Chambres</h2>
+            <input type="number" name="chambres" placeholder="Nombre de chambres">
+            <h2>Photos</h2>
+            <input type="file" name="photos" accept="image/*" multiple>
+            <button type="submit" class="btn">Envoyer</button>
+        </div>
+    </div>
+
+</body>
+</html>
